@@ -1,0 +1,9 @@
+/* Para alinear el botón de eliminar junto al input */
+.componente-tarea {
+    display: flex; 
+    align-items: center; /* Centra verticalmente los elementos */
+}
+/* Espacio entre el campo de texto y el botón */
+.btn-eliminar {
+    margin-left: 10px; 
+}
