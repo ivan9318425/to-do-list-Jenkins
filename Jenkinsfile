@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    enviroment{
+    environment{
         DEPLOY_DIR='/var/www/html/to-do'
     }
     stages{
