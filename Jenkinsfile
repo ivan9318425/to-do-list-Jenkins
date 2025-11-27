@@ -11,8 +11,11 @@ pipeline{
         }
         stage('deploy'){
             steps{
-                sh 'mkdir -p ${env.DEPLOY_DIR}'
-                sh 'cp -r ./*.html ./*.css ./*.js ${env.DEPLOY_DIR}'
+powershell "New-Item -ItemType Directory -Force -Path \"${env.DEPLOY_DIR}\""
+        
+        // Comando PowerShell para copiar (más simple)
+        powershell "Copy-Item -Path * -Include '*.html','*.css','*.js' -Destination \"${env.DEPLOY_DIR}\" -Recurse -Force"
+    }
             }
         }
     }
