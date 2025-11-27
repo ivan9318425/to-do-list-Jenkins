@@ -7,7 +7,6 @@ pipeline{
         stage('checkout'){
             steps{
                 checkout scm 
-                'echo Se descarga el archivo'
             }
         }
         stage('deploy'){
