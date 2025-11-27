@@ -19,4 +19,3 @@ powershell "New-Item -ItemType Directory -Force -Path \"${env.DEPLOY_DIR}\""
             }
         }
     }
-}
