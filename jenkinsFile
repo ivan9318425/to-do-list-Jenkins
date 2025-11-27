@@ -12,7 +12,8 @@ pipeline{
         stage('deploy'){
             steps{
                 sh 'mkdir -p ${env.DEPLOY_DIR}'
-                sh 'cp -r ./*.html ./*.css ./*.js'+env.DEPLOY_DIR}
+                sh 'cp -r ./*.html ./*.css ./*.js ${env.DEPLOY_DIR}'
             }
         }
     }
+}
